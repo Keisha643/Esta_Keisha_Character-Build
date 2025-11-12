@@ -1,0 +1,151 @@
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-feature-settings: "smcp" on;
+    background-color: rgb(32, 29, 39);
+    color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0; */
+    padding: 10px 0;
+}
+
+#main-logo {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#character-nav {
+    background-color: #675050;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url('../images/bsd-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#characters {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#characters li {
+    display: inline-block;
+    margin: 10px;
+}
+
+#characters li img {
+    border: solid 4px rgb(66, 66, 66);
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 0px 10px 0px rgba(58, 40, 16, 0.9);
+    transition: all .3s ease-in-out;
+    border-radius: 0% 0% 0% 0%; 
+    border-right: 5px rgba(66, 66, 66);
+}
+
+#characters li a {
+    text-decoration: none;
+}
+
+#characters li img:hover {
+    filter: grayscale(100%);
+    border-radius: 50% 50% 50% 50%;
+    border-right: 5px rgba(66, 66, 66);
+    border-block-end-style: inherit;
+}
+
+#instructions {
+    padding: 20px;
+}
+
+#instructions h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
+#instructions p {
+    font-size: 18px;
+    text-align: center;
+}
+
+#main-footer {
+    height: 80px;
+    background-color: rgb(116, 114, 114);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+    background-repeat: no-repeat;
+    background-size: 75vh;
+    background-position: 40px bottom;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+.lightbox:target {
+    display: block;
+}
+
+#lightbox1 {
+    background-image: url(../images/NA-LB-bg.png);
+}
+
+#lightbox2 {
+    background-image: url(../images/AR-LB-bg.png);
+}
+
+#lightbox3 {
+    background-image: url(../images/DO-LB-bg.png); 
+}
+
+#lightbox4 {
+    background-image: url(../images/NC-LB-bg.webp);
+    
+}
+
+.lightbox-close {
+    color: white;
+    font-size: 46px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 95vw;
+    transition: all .2s ease-in-out;
+}
+
+.lightbox-close:hover {
+    color: rgb(104, 21, 21);
+}
+
+.lightbox section {
+    width: 600px;
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+.lb-heading {
+    font-size: 32px;
+}
+
+.lightbox p {
+    line-height: 30px;
+}
